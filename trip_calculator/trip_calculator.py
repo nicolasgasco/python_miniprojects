@@ -14,17 +14,11 @@ Calculate the cost of the trip and display it to the user in the console.
 
 '''
 
-# Ask user question in the command line
 
-# Receive kilometers to drive
 km_drive = input("Please insert the number of kms to drive: ")
-# L/km of car
+# Changed from L/km to L/100 km because this is more conventional
 efficiency_car = float(input("Please insert the liter per 100 km of your car: "))
-
-# price per liter of fuel
 price_fuel = float(input("Please insert the price of fuel per liter: "))
-
-# Calculate cost of trip
 
 cost_trip = (efficiency_car * float(km_drive)/100) * price_fuel
 print(round(cost_trip, 2))
